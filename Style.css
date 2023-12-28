@@ -1,0 +1,422 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	font-family: 'Poppins', sans-serif;
+}
+ body{ 
+     line-height: 1.5;
+	  background: #000; 
+ } 
+/*-----------------------------------------------*/
+/*-------------- Header Area Start --------------*/
+/*-----------------------------------------------*/
+nav{
+	position: fixed;
+	width: 100%;
+	height: 80px;
+	background: #000;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px 50px 0px 100px;
+}
+nav .logo{
+	cursor: pointer;
+}
+nav ul{
+	display: flex;
+	list-style: none;
+}
+nav ul li{
+	margin: 0 5px;
+}
+nav ul li a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	padding: 8px 10px;
+	border-radius: 5px;
+	transition: all 0.3s ease;
+}
+nav ul li a:hover,
+nav ul li a.active{
+	color: #1b1b1b;
+	background: #fff;
+}
+i.fa-solid.fa-bars {
+    color: #fff;
+	font-size: 22px;
+	cursor: pointer;
+	display: none;
+}
+#click{
+	display: none;
+}
+/*-----------------------------------------------*/
+/*-------------- Header Area End --------------*/
+/*-----------------------------------------------*/
+
+/*************************************************/
+
+/*-----------------------------------------------*/
+/*-------------- @Media query Start --------------*/
+/*-----------------------------------------------*/
+@media (max-width: 940px) {
+
+	i.fa-solid.fa-bars{
+		display: block;
+	}
+	#click:checked ~ .menu-btn i:before{
+		content: "\f00d";
+	}
+	nav ul{
+		position: fixed;
+		top: 80px;
+		left: -100%;
+		background: #111;
+		height: 100vh;
+		width: 100%;
+		display: block;
+		text-align: center;
+		transition: all 0.3s ease;
+	}
+	#click:checked ~ ul{
+		left: 0%;
+	}
+	nav ul li{
+		margin: 40px 0;
+	}
+	nav ul li a{
+		font-size: 20px;
+		display: block;
+	}
+	nav ul li a:hover,
+    nav ul li a.active{
+	color: cyan;
+	background: none;
+    }
+}
+/*-----------------------------------------------*/
+/*-------------- @Media query End  --------------*/
+/*-----------------------------------------------*/
+
+/*************************************************/
+
+/*-----------------------------------------------*/
+/*-------------- Hero Area Start ----------------*/
+/*-----------------------------------------------*/
+.container{
+	overflow: hidden;
+	padding: 15px;
+	width: 100%;
+	
+	
+}
+
+ .Home{
+	overflow: hidden;
+	background-image: linear-gradient(rgba(0 0 0 / 34%),rgba(0 0 0 / 56%)),url(img/destiny1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	/* background-attachment: fixed; */
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+		}
+.home-subtitle{
+	color: #fff;
+	font-family: 'Poppins', sans-serif;
+	font-size: 25px;
+	font-weight: normal;
+	text-transform: uppercase;
+	letter-spacing: 12px;
+	text-shadow: 0 7px hsla(0, 0%, 0%, 0.4);
+	margin-bottom: 15px;
+	margin-top: 10%;
+}
+h1.ht.home-title {
+    font-size: 50px;
+    font-family: 'Work Sans', sans-serif;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.home-title{
+	margin-bottom: 10px;
+}
+.btn-group{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.btn{
+	display: inline-block;
+	margin-top: 1rem;
+	border-radius: 5rem;
+	color: #fff;
+	background: #3f4dba;
+	padding: .9rem 3.5rem;
+	cursor: pointer;
+	font-size: 1.7rem;
+	text-decoration: none;
+	transition: all 0.5s ease;
+}
+
+
+.btn-primary:hover{
+	background: #333;
+}
+button.btn.btn-link {
+    background: #333;
+    color: #fff;
+}
+
+button.btn.btn-link:hover {
+    background: #3f4dba;
+}
+i.fa-solid.fa-circle-play {
+    font-size: 25px;
+}
+
+
+
+
+
+/*-----------------------------------------------*/
+/*-------------- Hero Area End ------------------*/
+/*-----------------------------------------------*/
+
+/*************************************************/
+
+/*-----------------------------------------------*/
+/*-------------- About Section start -----------------*/
+/*-----------------------------------------------*/
+
+.heading{
+	overflow: hidden;
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	padding-bottom: 3.4rem;
+	padding-top:3.5rem;
+	font-size: 4rem;
+	}
+.heading span{
+	color: #b434c2;
+	text-transform: uppercase;
+}
+/* .image img { */
+    /* width: 40%; */
+    /* overflow: hidden; */
+    /* float: left; */
+    /* margin-right: 5rem; */
+    /* margin-left: 5rem; */
+    /* margin-bottom: 5rem; */
+/* } */
+.about .row{
+	display: flex;
+	align-items: center;
+	background: #000;
+	flex-wrap: wrap;
+}
+.about .row .image{
+	flex: 1 1 45rem;
+}
+.about .row .image img{
+	width: 100%;
+}
+.about .row .content{
+	flex: 1 1 45rem;
+	padding: 2rem;
+}
+.about .row .content h1{
+	font-size: 3rem;
+	color: #fff;
+	text-transform: uppercase;
+}
+.about .row .content p{
+	font-size: 1.2rem;
+	color: #ccc;
+	padding: 1rem 0;
+	line-height: 1.8;
+	text-align: justify;
+}
+.about-btn{
+	display: inline-block;
+	margin-top: 1rem;
+	border-radius: 5rem;
+	color: #fff;
+	background: #3f4dba;
+	padding: .9rem 3.5rem;
+	cursor: pointer;
+	font-size: 1.7rem;
+	text-decoration: none;
+	transition: all 0.5s ease;
+}
+a.about-btn:hover {
+    background: #89838352;
+}
+
+
+
+/*-----------------------------------------------*/
+/*-------------- Aout section End ------------------*/
+/*-----------------------------------------------*/
+
+/*-----------------------------------------------*/
+/*-------------- Career Section Start ------------------*/
+/*-----------------------------------------------*/
+.career{
+	overflow: hidden;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 2rem;
+	background-image: url(img/background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding-bottom: 6rem;
+}
+.heading2{
+	font-size: 5rem;
+	color: #fff;
+	margin-top: -4rem;
+	margin-bottom: 3rem;
+	text-align: center;
+}
+
+.career-img{
+	width: 25rem;
+	height: 25rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10rem;
+}
+.career-img img{
+	width: 90%;
+} 
+.btn-box.btns {
+    margin-top: -4rem;
+	text-align: center;
+}
+.botton{
+	display: inline-block;
+	margin-top: 1rem;
+	margin-left: 1rem;
+	border-radius: 5rem;
+	color: #fff;
+	background: #3f4dba;
+	padding: .9rem 3.5rem;
+	cursor: pointer;
+	font-size: 1.7rem;
+	text-decoration: none;
+	transition: all 0.5s ease;
+}
+.botton:hover{
+	background: #89838352;
+}
+/*-----------------------------------------------*/
+/*-------------- Career Section End -------------*/
+/*-----------------------------------------------*/
+/*-----------------------------------------------*/
+/*-------------- Footer Section Start ------------*/
+/*-----------------------------------------------*/
+.container2{
+	max-width: 1170px;
+	margin: auto;
+}
+.row2{
+	display: flex;
+	flex-wrap: wrap;
+}
+.container2 ul{
+	list-style: none;
+}
+.contact{
+	background: #24262b;
+	padding: 70px 0;
+}
+.footer-col{
+	width: 25%;
+	padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #fff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+	}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #fff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background: rgba(255,255,255,0.2);
+	margin: 0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #fff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background: #fff;
+}
+@media(max-width: 767px){
+	.footer-col{
+		width: 50%;
+		margin-bottom: 30px;
+	}
+}
+@media(max-width: 574px){
+	.footer-col{
+		width: 100%;
+	}
+}
+/*-----------------------------------------------*/
+/*-------------- Footer Section End ------------*/
+/*-----------------------------------------------*/
